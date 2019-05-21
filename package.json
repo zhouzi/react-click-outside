@@ -1,5 +1,5 @@
 {
-  "name": "react-click-outside",
+  "name": "@zhouzi/react-click-outside",
   "version": "0.1.0",
   "description": "Listen to clicks happening outside a given container",
   "keywords": [
