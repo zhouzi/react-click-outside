@@ -1,0 +1,36 @@
+{
+  "name": "react-click-outside",
+  "version": "0.1.0",
+  "description": "Listen to clicks happening outside a given container",
+  "keywords": [
+    "react",
+    "hooks",
+    "click",
+    "outside"
+  ],
+  "homepage": "https://github.com/zhouzi/react-click-outside#readme",
+  "bugs": "https://github.com/zhouzi/react-click-outside/issues",
+  "license": "MIT",
+  "author": "Gabin Aureche <hello@gabinaureche.com>",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:zhouzi/react-click-outside.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "prebuild": "rm -rf dist",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.18",
+    "react": "^16.8.6",
+    "typescript": "^3.4.5"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6"
+  }
+}
