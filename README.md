@@ -10,25 +10,25 @@ npm install @zhouzi/react-click-outside
 
 ## Usage
 
-```
+```js
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { useClickOutside } from '@zhouzi/react-click-outside';
 
 function Modal() {
     const [isOpen, setOpen] = React.useState(false);
-    const onClickOutside = React.useCallback(() => {
+    const { ref } = useClickOutside(() => {
         if (isOpen) {
             setOpen(false);
         }
-    }, [isOpen]);
+    });
 
     return (
         <>
             <button onClick={() => setOpen(true)}>
                 Open
             </button>
-            {isOpen && <div>Modal is open</div>}
+            {isOpen && <div ref={ref}>Modal is open</div>}
         </>
     );
 }
